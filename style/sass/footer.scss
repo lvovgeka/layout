@@ -1,0 +1,92 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #fafafa;
+  ._top {
+    hr {
+      widht: 100%;
+      margin-top: 0;
+      border: none;
+      height: 2px;
+      background-color: #d7d7d7;
+      box-shadow: 0px 0px 100px 0px #d7d7d7,
+      0px 0px 1px 0px #d7d7d7,
+      0px 5px 10px 0px #d7d7d7,
+      0px 15px 10px 0px #d7d7d7;
+    }
+  }
+  //end top footer
+
+  //start category
+  ._category{
+
+    h4{
+      font-family: OpenSans-Semibold;
+      color: $textBlack;
+
+      @include font-shadow($textBlack, 0, 0, $sharp);
+      font-size: 1em;
+      margin-bottom: 0;
+    }
+    p{
+      font-family: OpenSans-Regular;
+      font-size: 1em;
+      color: $textGrey;
+      @include sharp();
+      padding: 0;
+      margin: 5px 0;
+      a{
+        color: $textGrey;
+        @include sharp();
+      }
+    }
+  }//end category
+  hr{
+    border: none;
+    height: 1px;
+    background-color: $colorBorder;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  //start socials
+  ._socials{
+    background-color: white;
+    margin-top: 5px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-top: 1px solid $colorBorder;
+    border-bottom: 1px solid $colorBorder;
+    font-family: OpenSans-Semibold;
+    font-size: 1em;
+    color: $textBlack;
+    @include sharp();
+    ._to-top{
+      // float: right;
+      a{
+        color: $textGrey;
+        @include sharp();
+        font-family: OpenSans-Regular;
+      }
+    }
+    ._icons{
+      margin-left: 5px;
+      img{
+        height: 32px;
+      }
+    }
+  }//end socials
+  //start bottom
+  ._bottom{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: OpenSans-Regular;
+    color: $textGrey;
+    font-size: 1em;
+    @include font-shadow($textGrey, 0, 0, $sharp);
+    a{
+      color: $textGrey;
+      @include font-shadow($textGrey, 0, 0, $sharp);
+    }
+  }//end bottom
+}//end footer

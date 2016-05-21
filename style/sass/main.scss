@@ -1,0 +1,16 @@
+@import "../bourbon/bourbon";
+@import "./mixin";
+@import "./fonts";
+@import "./variables"; 
+ 
+
+body{ 
+  //margin-bottom: 385px; for height footer to bottom uncomment
+html {
+  position: relative;//for footer
+  min-height: 100%; //for footer
+}
+
+@import "header";
+//
+@import "footer";

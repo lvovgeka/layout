@@ -1,0 +1,4 @@
+@include font-face("OpenSans-Bold", "../../fonts/OpenSans-Bold", 600, $file_formats: ttf);
+@include font-face("OpenSans-Regular", "../../fonts/OpenSans-Regular", normal, $file_formats: ttf);
+@include font-face("OpenSans-Light", "../../fonts/OpenSans-Light", normal, $file_formats: ttf);
+@include font-face("OpenSans-Semibold", "../../fonts/OpenSans-Semibold", 600, $file_formats: ttf);
