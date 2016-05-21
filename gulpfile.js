@@ -1,5 +1,5 @@
 var gulp         = require('gulp');
-var autoprefixer = require('gulp-autoprefixer'());
+var autoprefixer = require('gulp-autoprefixer');
 var minifycss    = require('gulp-minify-css');
 var concat       = require('gulp-concat');
 var uglify       = require('gulp-uglifyjs');
