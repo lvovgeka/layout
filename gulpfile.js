@@ -66,5 +66,5 @@ gulp.task('serve', function(){
  */
 gulp.task('default', function () {
 
-    runSequence(['watch:static', 'serve', 'watch']);
+    runSequence(['static', 'serve', 'watch']);
 });
