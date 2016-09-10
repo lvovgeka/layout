@@ -5,53 +5,54 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
 <head>
     <meta charset="UTF-8">
-
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png">
-
-
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
     <title>Title</title>
-    <!-- bootstrap -->
-    <link href="/css/bootstrap.css" rel="stylesheet">
+    <!-- bootstrap css  v3.3.2-->
+    <link href="libs/bootstrap/css/bootstrap.css" rel="stylesheet">
     <!-- font awesome CDN-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-
-
+    <!-- File styles -->
     <link href="/css/main.css" rel="stylesheet">
-
-</head>
-<body>
-<div w3-include-html="header.html"></div>
-<main class="content">
-    <!-- write code here -->
-    lorem
-</main>
-
-
-<div w3-include-html="footer.html"></div>
-<script>
-    w3IncludeHTML();
-</script>
-
-    <!-- JQuery CDN -->
-    <script   src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>  
-    
-    <script src="/js/bootstrap.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!-- script for includes html files -->
-    <script src="http://www.w3schools.com/lib/w3data.js"></script>
-    <!-- way on DOM -->
-    <script src="libs/waypoints/waypoints.min.js"></script>
-    <script src="libs/animate/animate-css.js"></script>
+</head>
+<body>
+<!-- This include header from html file -->
+<div w3-include-html="header.html"></div>
+<!-- Content... -->
+<main class="content">
+    <!-- write code here -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                Content
+            </div>
+        </div>
+    </div>
+</main>
+<!-- This include footer from html file -->
+<div w3-include-html="footer.html"></div>
+<!-- JQuery CDN -->
+<script  src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+<!-- Bootstrap js  v3.3.2-->
+<script src="libs/bootstrap/js/bootstrap.js"></script>
+
+<!-- script for includes html files -->
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+<!-- way on DOM -->
+<script src="libs/waypoints/waypoints.min.js"></script>
+<script src="libs/animate/animate-css.js"></script>
+<script>
+    //init include html to template
+    w3IncludeHTML();
+</script>
 </body>
 </html>

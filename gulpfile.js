@@ -15,8 +15,16 @@ var sass         = require('gulp-sass');
  */
 gulp.task('static', [],function(){
     return gulp.src('./style/css/*')
-       // .pipe(watch('./style/css/*'))
+        .pipe(watch('./style/css/*'))
         .pipe(gulp.dest('./public/css'));
+});
+/**
+ * copy Fonts
+ */
+gulp.task('staticFonts', [],function(){
+    return gulp.src('./style/fonts/**')
+        .pipe(watch('./style/fonts/**'))
+        .pipe(gulp.dest('./public/fonts'));
 });
 
 
@@ -28,21 +36,7 @@ gulp.task('sass', function () {
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(gulp.dest('./style/css'));
 });
- 
 
-
-gulp.task('scripts', function() {
-    return gulp.src([
-        './app/libs/modernizr/modernizr.js',
-        './app/libs/jquery/jquery-1.11.2.min.js',
-        './app/libs/waypoints/waypoints.min.js',
-        './app/libs/animate/animate-css.js',
-        './app/libs/plugins-scroll/plugins-scroll.js',
-        ])
-        .pipe(concat('libs.js'))
-        // .pipe(uglify()) //Minify libs.js
-        .pipe(gulp.dest('./app/js/'));
-});
 
 
 gulp.task('watch', function () {
@@ -66,5 +60,5 @@ gulp.task('serve', function(){
  */
 gulp.task('default', function () {
 
-    runSequence(['static', 'serve', 'watch']);
+    runSequence(['static', 'staticFonts','serve', 'watch']);
 });
